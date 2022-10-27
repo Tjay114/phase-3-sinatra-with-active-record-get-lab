@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     baked_goods.to_json
   end
 
-  get '/baked_goods/most_expensive' do 
+  get '/baked_goods/most_expensive' do
     most_expensive = BakedGood.most_expensive
     most_expensive.to_json
   end
